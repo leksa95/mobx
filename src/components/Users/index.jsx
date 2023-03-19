@@ -9,7 +9,7 @@ const Users = observer(
   ({ store: { users, fetchUsers, removeUser, addUser, allUsers } }) => {
     return (
       <div className={styles.container}>
-          <div className={styles.container_title}>Users Page</div>
+          <div className={styles.container_title}>MobX: Users Page</div>
 
           <div className={styles.wrapper}>
               <div className={styles.wrapper_inner}>
