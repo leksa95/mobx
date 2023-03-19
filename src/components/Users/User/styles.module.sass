@@ -1,0 +1,85 @@
+.card
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  max-height: 400px
+  box-sizing: border-box
+  position: relative
+  border-radius: 10px
+  box-shadow: rgba(5, 145, 255, 0.2) 0 8px 24px
+
+  &_header
+    width: 100%
+    height: 120px
+    border-top-left-radius: 7px
+    border-top-right-radius: 7px
+    position: relative
+    background-color: #3a599a
+
+    &__cart
+      position: absolute
+      border-radius: 50%
+      width: 30px
+      height: 30px
+      background: inherit
+      color: #ffffff
+      font-size: 16px
+      display: flex
+      align-items: center
+      justify-content: center
+      box-shadow: rgb(76 76 102 / 27%) -4px 2px 14px 2px
+      font-weight: bold
+      right: -7px
+      top: -7px
+      cursor: pointer
+
+    &__avatar
+      width: 80px
+      height: 80px
+      background-image: url('https://i.pravatar.cc/300')
+      background-size: cover
+      border-radius: 50%
+      border: 2px solid #fff
+      position: absolute
+      left: 50%
+      transform: translate(-50%, 0)
+      bottom: -40px
+      box-shadow: rgba(5, 145, 255, 0.2) 0 8px 24px
+
+
+  &_body
+    padding: 60px 40px 70px 40px
+    background: #fff
+    border-bottom-left-radius: 7px
+    border-bottom-right-radius: 7px
+    height: calc(100% - 120px)
+
+    &__name
+      color: #6e6e6e
+      font-family: 'Lobster', cursive
+
+    &__email
+      text-transform: lowercase
+      font-family: 'Lobster', cursive
+      color: #b2b2b2
+      margin-top: 10px
+      font-size: 14px
+
+    &__description
+      margin-top: 20px
+      color: #b2b2b2
+      font-size: 14px
+
+  &_footer
+    position: absolute
+    bottom: 30px
+    left: 50%
+    transform: translate(-50%, 0)
+    opacity: 0.4
+
+    img
+      margin-right: 10px
+      &:last-child
+        margin: 0
